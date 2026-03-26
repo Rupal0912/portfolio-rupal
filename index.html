@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Rupal Tripathi — ML & Data Science</title>
+<title>Rupal Tripathi — Software Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
@@ -176,7 +176,7 @@ section{padding:6.5rem 3rem}
 
 /* ── RESUME SECTION ── */
 #resume{background:var(--surface)}
-.resume-wrapper{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center}
+.resume-wrapper{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
 .resume-text h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1.4rem;color:var(--heading);margin-bottom:1rem;letter-spacing:-.02em}
 .resume-text p{font-size:.93rem;color:var(--muted);line-height:1.85;margin-bottom:2rem}
 .resume-highlights{display:flex;flex-direction:column;gap:.7rem;margin-bottom:2.5rem}
@@ -184,14 +184,14 @@ section{padding:6.5rem 3rem}
 .resume-hl::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0}
 .btn-download{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;padding:13px 28px;border-radius:7px;font-family:'DM Mono',monospace;font-size:.8rem;font-weight:500;letter-spacing:.05em;text-decoration:none;transition:all .25s;text-transform:uppercase}
 .btn-download:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,229,160,.35)}
-.resume-preview{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;aspect-ratio:3/4;display:flex;flex-direction:column}
+.resume-preview{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;max-height: 420px; height: auto;display:flex;flex-direction:column}
 .resume-preview-header{background:linear-gradient(135deg,rgba(0,229,160,.1),rgba(0,179,255,.05));border-bottom:1px solid var(--border);padding:1rem 1.5rem;display:flex;align-items:center;gap:.7rem}
 .resume-preview-dot{width:10px;height:10px;border-radius:50%}
 .resume-preview-body{flex:1;padding:1.5rem;display:flex;flex-direction:column;gap:1rem}
 .rp-line{height:8px;background:var(--border);border-radius:4px}
 .rp-line.short{width:40%}.rp-line.med{width:65%}.rp-line.long{width:85%}.rp-line.full{width:100%}
 .rp-line.accent{background:rgba(0,229,160,.2);height:10px}
-.rp-group{display:flex;flex-direction:column;gap:.5rem}
+.rp-group{display:flex;flex-direction:column;gap:.2rem}
 .rp-label{font-family:'DM Mono',monospace;font-size:.6rem;color:var(--accent);letter-spacing:.1em;margin-bottom:.3rem}
 .resume-preview-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(6,9,13,.7);backdrop-filter:blur(4px);gap:1rem}
 .resume-preview-overlay p{font-family:'DM Mono',monospace;font-size:.75rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
@@ -209,7 +209,7 @@ section{padding:6.5rem 3rem}
 .link-value{font-size:.84rem;color:var(--text);transition:color .2s}
 .contact-link:hover .link-value{color:var(--accent)}
 .contact-form{display:flex;flex-direction:column;gap:.85rem}
-.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom: 1.2rem;}
 .form-group label{font-family:'DM Mono',monospace;font-size:.63rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 .form-group input,.form-group textarea{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:11px 14px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:.87rem;outline:none;transition:border-color .2s;resize:vertical}
 .form-group input:focus,.form-group textarea:focus{border-color:rgba(0,229,160,.4)}
@@ -261,8 +261,8 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
     <li><a href="#education" onclick="closeMenu()">Education</a></li>
     <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
     <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-    <li><a href="#certificates" onclick="closeMenu()">Certs</a></li>
-    <li><a href="#achievements" onclick="closeMenu()">Awards</a></li>
+    <li><a href="#certificates" onclick="closeMenu()">Certificates</a></li>
+    <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
     <li><a href="#resume" onclick="closeMenu()">Resume</a></li>
     <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
   </ul>
@@ -280,7 +280,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
       <div class="hero-badge">Open to opportunities</div>
       <div class="hero-name">Rupal<br><span class="grad">Tripathi</span></div>
       <div class="hero-typing-wrap">// <span id="typingText"></span><span class="cursor"></span></div>
-      <p class="hero-tagline">Turning data into intelligent systems through machine learning and practical deployment.</p>
+      <p class="hero-tagline"> Building real-world applications using data, web technologies, and problem-solving skills.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>View Projects
@@ -307,18 +307,84 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
   <div class="container">
     <div class="reveal"><p class="section-label">01 — About</p><h2 class="section-title">Who I Am</h2><div class="section-line"></div></div>
     <div class="about-grid">
-      <div class="about-text reveal">
+      <!-- <div class="about-text reveal">
         <p>I'm a <strong>Computer Science student at Lovely Professional University</strong> with a deep focus on machine learning and data-driven problem solving. I enjoy turning messy real-world data into systems that actually work in production.</p>
         <p>My strength lies in building <strong>end-to-end ML pipelines</strong> — from data wrangling and feature engineering to training models and deploying them via production-ready APIs.</p>
         <p>I reach for <strong>FastAPI, Docker, Streamlit</strong> when deploying; <strong>Scikit-learn, Pandas, NumPy, Librosa</strong> for the ML core; and <strong>Power BI</strong> when the story lives in the data.</p>
-      </div>
-      <div class="about-stats reveal" id="aboutStats">
+      </div> -->
+      <div class="about-text reveal">
+  <p>
+    I'm a <strong>Computer Science student at Lovely Professional University</strong> who enjoys building practical, real-world applications. I focus on solving problems through clean logic, structured thinking, and efficient implementation.
+  </p>
+
+  <p>
+    My work spans <strong>backend development, data handling, and basic machine learning integration</strong>. I like building systems end-to-end — from designing APIs to working with data and deploying functional applications.
+  </p>
+
+  <p>
+    I have experience with <strong>FastAPI, Python, SQL, and Docker</strong>, along with tools like <strong>Pandas and Power BI</strong> when working with data. My goal is to build things that are not just functional, but actually useful.
+  </p>
+</div>
+      <!-- <div class="about-stats reveal" id="aboutStats">
         <div class="stat-item"><div class="stat-top"><div class="stat-label">Machine Learning</div><div class="stat-pct">92%</div></div><div class="stat-bar"><div class="stat-fill" style="width:92%"></div></div></div>
         <div class="stat-item"><div class="stat-top"><div class="stat-label">Python & Data Engineering</div><div class="stat-pct">88%</div></div><div class="stat-bar"><div class="stat-fill" style="width:88%"></div></div></div>
-        <div class="stat-item"><div class="stat-top"><div class="stat-label">FastAPI & Docker Deployment</div><div class="stat-pct">80%</div></div><div class="stat-bar"><div class="stat-fill" style="width:80%"></div></div></div>
+        <div class="stat-item"><div class="stat-top"><div class="stat-label">FastAPI & Docker Development</div><div class="stat-pct">80%</div></div><div class="stat-bar"><div class="stat-fill" style="width:80%"></div></div></div>
         <div class="stat-item"><div class="stat-top"><div class="stat-label">Power BI & Data Visualization</div><div class="stat-pct">82%</div></div><div class="stat-bar"><div class="stat-fill" style="width:82%"></div></div></div>
         <div class="stat-item"><div class="stat-top"><div class="stat-label">SQL & Databases</div><div class="stat-pct">76%</div></div><div class="stat-bar"><div class="stat-fill" style="width:76%"></div></div></div>
-      </div>
+      </div> -->
+      <div class="about-stats reveal" id="aboutStats">
+
+  <div class="stat-item">
+    <div class="stat-top">
+      <div class="stat-label">Python & Backend Development</div>
+      <div class="stat-pct">Intermediate</div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-fill" style="width:75%"></div>
+    </div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-top">
+      <div class="stat-label">Data Handling & Machine Learning</div>
+      <div class="stat-pct">Intermediate</div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-fill" style="width:70%"></div>
+    </div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-top">
+      <div class="stat-label">SQL & Databases</div>
+      <div class="stat-pct">Intermediate</div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-fill" style="width:72%"></div>
+    </div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-top">
+      <div class="stat-label">Data Visualization (Power BI)</div>
+      <div class="stat-pct">Intermediate</div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-fill" style="width:70%"></div>
+    </div>
+  </div>
+
+  <div class="stat-item">
+    <div class="stat-top">
+      <div class="stat-label">APIs & Development (FastAPI, Docker)</div>
+      <div class="stat-pct">Learning</div>
+    </div>
+    <div class="stat-bar">
+      <div class="stat-fill" style="width:65%"></div>
+    </div>
+  </div>
+
+</div>
     </div>
   </div>
 </section>
@@ -359,7 +425,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
 <!-- PROJECTS -->
 <section id="projects">
   <div class="container">
-    <div class="reveal"><p class="section-label">03 — Projects</p><h2 class="section-title">What I've Built</h2><p class="section-sub">End-to-end ML systems — from model training to deployed production apps.</p><div class="section-line"></div></div>
+    <div class="reveal"><p class="section-label">03 — Projects</p><h2 class="section-title">What I've Built</h2><p class="section-sub">Projects focused on building real-world applications with data, APIs, and Development.</p><div class="section-line"></div></div>
     <div class="projects-grid">
 
       <!-- Project 1: Deepfake Audio -->
@@ -437,7 +503,8 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
         <div class="project-body">
           <div class="project-num">PROJECT_01 · Jan 2026</div>
           <h3>Deepfake Audio Detection System</h3>
-          <p>End-to-end ML pipeline classifying real vs AI-generated speech. Extracts 48 features — MFCCs, RMS energy, spectral centroid, zero-crossing rate — using Librosa. FastAPI backend, Docker-containerised, deployed on Render.</p>
+          <!-- <p>End-to-end ML pipeline classifying real vs AI-generated speech. Extracts 48 features — MFCCs, RMS energy, spectral centroid, zero-crossing rate — using Librosa. FastAPI backend, Docker-containerised, deployed on Render.</p> -->
+           <p>Built a real-time application to detect AI-generated vs genuine audio using signal processing and machine learning. Designed a FastAPI backend for prediction and deployed using Docker on Render for live inference.</p>
           <div class="project-tags"><span class="tag">Python</span><span class="tag">Librosa</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Scikit-learn</span><span class="tag">Render</span></div>
           <div class="project-btns">
             <a href="https://deepfake-audio-authenticity-detection.onrender.com" target="_blank" class="btn-live">
@@ -502,7 +569,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
         <div class="project-body">
           <div class="project-num">PROJECT_02 · Jul 2025</div>
           <h3>AgriPredict — Crop Recommendation</h3>
-          <p>Climate-aware ML system suggesting optimal crops from soil parameters and live weather API data. Achieves ~95% accuracy. Interactive Streamlit app with visualizations and downloadable recommendation reports.</p>
+          <p>Developed a data-driven application that recommends optimal crops based on soil inputs and real-time weather data. Integrated a weather API and built an interactive Streamlit interface for easy decision-making.</p>
           <div class="project-tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Streamlit</span><span class="tag">Weather API</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span></div>
           <div class="project-btns">
             <a href="https://rupal0912-crop-recommendation-streamlit-app-dyeqej.streamlit.app/" target="_blank" class="btn-live">
@@ -572,7 +639,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
         <div class="project-body">
           <div class="project-num">PROJECT_03 · Sept 2025</div>
           <h3>Startup Funding Analytics Dashboard</h3>
-          <p>Multi-page Power BI dashboard on Indian startup funding. Custom DAX measures for KPIs, funding trends, top investor contributions. Drill-downs, filters, and geospatial views for insight-driven analysis.</p>
+          <p>Built an interactive dashboard analyzing Indian startup funding trends. Created custom KPIs and visualizations to identify top sectors, investor activity, and funding patterns using Power BI.</p>
           <div class="project-tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Power Query</span><span class="tag">Excel</span><span class="tag">Data Modeling</span></div>
           <div class="project-btns">
             <a href="https://github.com/Rupal0912/Startup-Funding-Dashboard" target="_blank" class="btn-live">
@@ -589,36 +656,38 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
 <!-- SKILLS -->
 <section id="skills">
   <div class="container">
-    <div class="reveal"><p class="section-label">04 — Skills</p><h2 class="section-title">Technical Arsenal</h2><p class="section-sub">Technologies and tools I work with across the ML and data pipeline.</p><div class="section-line"></div></div>
+    <div class="reveal"><p class="section-label">04 — Skills</p><h2 class="section-title">Skills & Technologies</h2><p class="section-sub">Technologies and tools I use to build applications, work with data, and deploy solutions.</p><div class="section-line"></div></div>
     <div class="skills-filter reveal">
       <button class="filter-btn active" onclick="filterSkills('all',this)">All Skills</button>
       <button class="filter-btn" onclick="filterSkills('languages',this)">Languages</button>
-      <button class="filter-btn" onclick="filterSkills('libraries',this)">ML Libraries</button>
-      <button class="filter-btn" onclick="filterSkills('deployment',this)">Deployment</button>
+      <button class="filter-btn" onclick="filterSkills('libraries',this)">Data & ML</button>
+      <button class="filter-btn" onclick="filterSkills('Development',this)">Development</button>
       <button class="filter-btn" onclick="filterSkills('tools',this)">Tools</button>
     </div>
     <div class="skills-grid-new reveal" id="skillsGrid">
       <!-- Languages -->
-      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,114,198,0.15)">🐍</div><div><div class="skill-name">Python</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct">90%</div></div></div>
-      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,89,179,0.15)">🔷</div><div><div class="skill-name">C++</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct">78%</div></div></div>
-      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(85,85,85,0.2)">⚙️</div><div><div class="skill-name">C</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><div class="skill-pct">75%</div></div></div>
-      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,150,136,0.15)">🗃️</div><div><div class="skill-name">SQL</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:76%"></div></div><div class="skill-pct">76%</div></div></div>
+      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,114,198,0.15)">🐍</div><div><div class="skill-name">Python</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,89,179,0.15)">🔷</div><div><div class="skill-name">C++</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(85,85,85,0.2)">⚙️</div><div><div class="skill-name">C</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="languages"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,150,136,0.15)">🗃️</div><div><div class="skill-name">SQL</div><div class="skill-cat">Language</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:76%"></div></div><div class="skill-pct"></div></div></div>
+       <!-- Development -->
+      <div class="skill-card" data-cat="Development"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,229,160,0.1)">⚡</div><div><div class="skill-name">FastAPI</div><div class="skill-cat">Development</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="Development"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,179,255,0.1)">🐳</div><div><div class="skill-name">Docker</div><div class="skill-cat">Development</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="Development"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,75,75,0.1)">🎈</div><div><div class="skill-name">Streamlit</div><div class="skill-cat">Development</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><div class="skill-pct"></div></div></div>
+     
+      
       <!-- ML Libraries -->
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(247,147,26,0.15)">🤖</div><div><div class="skill-name">Scikit-learn</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div><div class="skill-pct">88%</div></div></div>
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(19,124,189,0.15)">🐼</div><div><div class="skill-name">Pandas</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct">90%</div></div></div>
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(77,171,245,0.15)">🔢</div><div><div class="skill-name">NumPy</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:87%"></div></div><div class="skill-pct">87%</div></div></div>
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,127,14,0.15)">📊</div><div><div class="skill-name">Matplotlib</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div><div class="skill-pct">82%</div></div></div>
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(44,160,44,0.15)">📈</div><div><div class="skill-name">Seaborn</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div><div class="skill-pct">80%</div></div></div>
-      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,229,160,0.1)">🎵</div><div><div class="skill-name">Librosa</div><div class="skill-cat">ML Library</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct">78%</div></div></div>
-      <!-- Deployment -->
-      <div class="skill-card" data-cat="deployment"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,229,160,0.1)">⚡</div><div><div class="skill-name">FastAPI</div><div class="skill-cat">Deployment</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div><div class="skill-pct">82%</div></div></div>
-      <div class="skill-card" data-cat="deployment"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,179,255,0.1)">🐳</div><div><div class="skill-name">Docker</div><div class="skill-cat">Deployment</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct">78%</div></div></div>
-      <div class="skill-card" data-cat="deployment"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,75,75,0.1)">🎈</div><div><div class="skill-name">Streamlit</div><div class="skill-cat">Deployment</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(247,147,26,0.15)">🤖</div><div><div class="skill-name">Scikit-learn</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(19,124,189,0.15)">🐼</div><div><div class="skill-name">Pandas</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(77,171,245,0.15)">🔢</div><div><div class="skill-name">NumPy</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:87%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,127,14,0.15)">📊</div><div><div class="skill-name">Matplotlib</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:82%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(44,160,44,0.15)">📈</div><div><div class="skill-name">Seaborn</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="libraries"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,229,160,0.1)">🎵</div><div><div class="skill-name">Librosa</div><div class="skill-cat">Data & ML</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:78%"></div></div><div class="skill-pct"></div></div></div>
       <!-- Tools -->
-      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(243,186,47,0.1)">📊</div><div><div class="skill-name">Power BI</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:83%"></div></div><div class="skill-pct">83%</div></div></div>
-      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(240,80,50,0.1)">🔀</div><div><div class="skill-name">Git</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div></div>
-      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,255,255,0.05)">📓</div><div><div class="skill-name">Jupyter</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct">90%</div></div></div>
-      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,120,212,0.1)">💻</div><div><div class="skill-name">VS Code</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div><div class="skill-pct">92%</div></div></div>
+      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(243,186,47,0.1)">📊</div><div><div class="skill-name">Power BI</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:83%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(240,80,50,0.1)">🔀</div><div><div class="skill-name">Git</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(255,255,255,0.05)">📓</div><div><div class="skill-name">Jupyter</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div><div class="skill-pct"></div></div></div>
+      <div class="skill-card" data-cat="tools"><div class="skill-card-top"><div class="skill-icon" style="background:rgba(0,120,212,0.1)">💻</div><div><div class="skill-name">VS Code</div><div class="skill-cat">Tool</div></div></div><div class="skill-bar-wrap"><div class="skill-bar"><div class="skill-bar-fill" style="width:92%"></div></div><div class="skill-pct"></div></div></div>
     </div>
   </div>
 </section>
@@ -711,15 +780,15 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
     <div class="resume-wrapper">
       <div class="reveal">
         <h3>Rupal Tripathi</h3>
-        <p>B.Tech CSE student at Lovely Professional University. Passionate about machine learning, data engineering, and building things that work in the real world — not just in notebooks.</p>
+        <p>B.Tech CSE student at Lovely Professional University with a focus on building real-world applications. Interested in backend development, data handling, and creating systems that are practical and usable beyond just concepts.</p>
         <div class="resume-highlights">
-          <div class="resume-hl">Machine Learning · Data Science · MLOps</div>
-          <div class="resume-hl">FastAPI · Docker · Streamlit deployment</div>
+          <div class="resume-hl">Software Development · Backend Systems · Data Handling</div>
+          <div class="resume-hl">FastAPI · Docker · API Development</div>
           <div class="resume-hl">Power BI dashboards with DAX & KPIs</div>
           <div class="resume-hl">SAP Hackfest Top 70 · CodeQuest Rank 251</div>
           <div class="resume-hl">5 professional certifications</div>
         </div>
-        <a href="https://drive.google.com/file/d/1A_KfxrAkUYBw2RuiRimR9D7a9UxeJ8xP/view?usp=sharing" target="_blank" class="btn-download">
+        <a href="https://drive.google.com/uc?export=download&id=1A_KfxrAkUYBw2RuiRimR9D7a9UxeJ8xP" target="_blank" class="btn-download">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           Download Resume
         </a>
@@ -756,7 +825,7 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
     <div class="reveal"><p class="section-label">08 — Contact</p><h2 class="section-title">Let's Connect</h2><div class="section-line"></div></div>
     <div class="contact-wrapper">
       <div class="contact-text reveal">
-        <p>Whether you have a project idea, a collaboration in mind, or just want to talk ML — my inbox is open. Currently looking for internship and research opportunities.</p>
+        <p>Whether you have a project idea, collaboration in mind, or just want to connect...feel free to reach out. I'm currently looking for internship opportunities where I can apply my skills and contribute to real-world projects.</p>
         <div class="contact-links">
           <a href="mailto:rupaltripathi464@gmail.com" class="contact-link">
             <div class="contact-link-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
@@ -772,13 +841,32 @@ footer p{font-family:'DM Mono',monospace;font-size:.66rem;color:var(--muted);let
           </a>
         </div>
       </div>
-      <!-- <form class="contact-form reveal" onsubmit="handleSubmit(event)"> -->
-        <form class="contact-form reveal" action="https://formspree.io/f/xnjonnap" method="POST">
-        <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required/></div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required/></div>
-        <div class="form-group"><label>Message</label><textarea placeholder="Tell me about your project or idea..."></textarea></div>
-        <button type="submit" class="btn-submit">Send Message →</button>
-      </form>
+      
+
+<form class="contact-form reveal" action="https://formspree.io/f/xnjonnap" method="POST">
+
+  <input type="hidden" name="_subject" value="New message from portfolio">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" placeholder="your@email.com" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea name="message" placeholder="Tell me about your idea or opportunity..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn-submit">Send Message →</button>
+
+</form>
     </div>
   </div>
 </section>
@@ -821,7 +909,9 @@ function filterSkills(cat,btn){
 }
 
 // Typing
-const phrases=['Machine Learning Engineer','Data Science Enthusiast','ML Systems Builder','FastAPI & Docker Dev','Turning Data into Impact'];
+const phrases=["Software Developer",
+  "Building Real-World Applications",
+  "Data-Driven Developer"];
 let pIdx=0,cIdx=0,deleting=false;
 const el=document.getElementById('typingText');
 function type(){const phrase=phrases[pIdx];if(!deleting){el.textContent=phrase.slice(0,++cIdx);if(cIdx===phrase.length){deleting=true;setTimeout(type,1800);return}}else{el.textContent=phrase.slice(0,--cIdx);if(cIdx===0){deleting=false;pIdx=(pIdx+1)%phrases.length;setTimeout(type,400);return}}setTimeout(type,deleting?45:75)}
